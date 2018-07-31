@@ -8,7 +8,7 @@
 # - PS: Platform.sh Professional
 
 # The name of this app. Must be unique within a project.
-name: app
+name: ez
 
 # The type of the application to build.
 type: php:7.1
@@ -37,8 +37,8 @@ variables:
         # For PE cluster, disable Symfony Proxy & instead use Fastly Bundle available on eZ Platform Enterprise
         #SYMFONY_HTTP_CACHE: 0
         # Place symfony cache on tmpfs to avoid performance issues of having it on NFS, re-deploy to clear cache reliably
-        # "app" comes from application name for platform.sh, so adapt it if you change the name for multi application setups
-        SYMFONY_CACHE_DIR: /tmp/app
+        # "ez" comes from application name for platform.sh, so adapt it if you change the name for multi application setups
+        SYMFONY_CACHE_DIR: /tmp/ez
         # PS: Given we just set cache directory to be non shared, we need to make sure http cache is shared (ignored when using Fastly)
         SYMFONY_HTTP_CACHE_DIR: app/cache/prod
         # Change this to dev if you want to run site & commands in dev

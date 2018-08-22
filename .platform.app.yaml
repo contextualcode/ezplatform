@@ -129,3 +129,5 @@ runtime:
         #  configuration:
         #      server_id: 'xxxx-xxx-xxx-xxx-xxxx'
         #      server_token: 'xxxx'
+    disabled_extensions:
+        - zip

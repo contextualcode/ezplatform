@@ -50,6 +50,9 @@ web:
             passthru: "/app.php"
             # The number of seconds whitelisted (static) content should be cache
             expires: 600
+        /info:
+            root: web
+            passthru: /info.php
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048

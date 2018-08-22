@@ -10,3 +10,9 @@ https://ezplatformcloud.ccplatform.net/:
     upstream: app:http
     cache:
         enabled: false
+
+https://admin.ezplatformcloud.contextualcode.site/:
+    type: upstream
+    upstream: app:http
+    cache:
+        enabled: false

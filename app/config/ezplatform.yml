@@ -23,7 +23,9 @@ ezpublish:
             admin_group: [admin]
         default_siteaccess: site
         match:
-            URIElement: 1
+            Map\Host:
+                ezplatformcloud.contextualcode.site: site
+                admin.ezplatformcloud.contextualcode.site: admin
 
     # System settings, grouped by siteaccess and/or siteaccess group
     system:
